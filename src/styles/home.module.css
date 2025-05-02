@@ -1,0 +1,56 @@
+.homeContainer {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .homeHeader {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .homeHeader h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .homeSubtext {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .homeNav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .navCard {
+    background-color: #cbe4ef;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(29, 156, 158, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .navCard:hover {
+    transform: translateY(-10px);
+  }
+  
+  .navCard h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: hsl(218, 97%, 52%);
+  }
+  
+  .navCard p {
+    font-size: 17px;
+    
+  }
+  

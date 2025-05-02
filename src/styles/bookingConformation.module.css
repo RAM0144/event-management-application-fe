@@ -1,0 +1,64 @@
+.container {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  .section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #333;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 0.5rem;
+  }
+  
+  .bookingCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .bookingCard:hover {
+    background-color: #f0f8ff;
+  }
+  
+  .bookingInfo {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .confirmBtn {
+    background-color: #28a745;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .confirmBtn:hover {
+    background-color: #218838;
+  }
+  
+  .confirmedCard {
+    background-color: #e6ffed;
+    border: 1px solid #b6e8c9;
+  }
+  
