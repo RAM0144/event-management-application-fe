@@ -27,7 +27,6 @@ const storeToLocalStorage = (props) => {
   const store = configureStore({
     reducer: {
       account: accountReducer,
-   
     },
     devTools: true,
     middleware: (defaultMiddlewareFn) => {

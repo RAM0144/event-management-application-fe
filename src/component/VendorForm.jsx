@@ -2,13 +2,15 @@ import { useState } from "react";
 import styles from "../styles/vendorForm.module.css"; 
 import { apiPost } from "../api/api.js"; 
 
+const initialState = {
+    name: "",
+    type: "",
+    contact: "",
+    details: "",
+}
+
 const VendorForm = () => {
-    const [vendorData, setVendorData] = useState({
-        name: "",
-        type: "",
-        contact: "",
-        details: "",
-    });
+    const [vendorData, setVendorData] = useState(initialState);
 
     const handleChange = (e) => {
         setVendorData({
@@ -25,6 +27,7 @@ const VendorForm = () => {
         } catch (error) {
             alert(error.message || "Error creating vendor");
         }
+        setVendorData(initialState)
     };
 
     return (

@@ -27,7 +27,7 @@ const handleSubmit = async (e)=> {
       const response = await apiPost("/auth/register", formData)
       alert(response.msg || "")
     } catch (error) {
-      console.log("Registeration error", error)
+      console.log("Registration error", error)
       alert(e.message)
     }
     setFormData(initialState)

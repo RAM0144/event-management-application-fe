@@ -2,13 +2,15 @@ import { useState } from "react"
 import styles from "../styles/eventForm.module.css"
 import { apiPost } from "../api/api.js"
 
+const initialState = {
+  name: "",
+  date: "",
+  type: ""
+}
+
 const EventForm = ()=>{
 
-    const[eventData, setEventData] = useState({
-        name: "",
-        date: "",
-        type: ""
-    })
+    const[eventData, setEventData] = useState(initialState)
 
     const handleChange = (e)=> {
         setEventData({
@@ -26,7 +28,7 @@ const EventForm = ()=>{
       } catch (error) {
         alert(error.message || "Error creating event");
       }
-
+      setEventData(initialState)
     }
 
     return(
